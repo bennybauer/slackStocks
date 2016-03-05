@@ -23,4 +23,4 @@ Make sure your settings are like so:
 ![Add a custom slash command configuration](https://github.com/savala/slackStocks/blob/master/screenshots/setup3.png)
 
 
-If you have any questions, concerns, or anything feel free to reach out to me @savala
+If you have any questions, concerns, or anything feel free to reach out to me [@saiavala](https://twitter.com/saiavala)
