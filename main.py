@@ -11,7 +11,7 @@ def stock():
     result = requests.get(url).text.split(',')
     result[2] = result[2].replace('"','')
     result[4] = result[4].replace('\n','')
-    result_text = ("*" + ticker.upper() + "*" + "\n--------\n"
+    result_text = ("*" + ticker.upper() + "*" + "\n"
                     "Price: " + result[0] + "\n"
                     "Amt Change: " + result[1] + "\n"
                     "% Change: " + result[2] + "\n"
