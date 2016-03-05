@@ -11,6 +11,8 @@ In your team settings, add a Slash Command Configuration
 
 
 Make sure your settings are like so:
+
+
 1. Add the command name "/stock"
 2. Add in the URL like so "http://<yourappurl>/stock
     * This assumes that you've deployed your application to AWS, heroku, digitalocean, or wherever you feel like so
