@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/stock')
 def stock():
-    ticker = request.args.get('ticker')
+    ticker = request.args.get('text')
     url = "http://download.finance.yahoo.com/d/quotes.csv?s=" + ticker + "&f=l1"
     result = requests.get(url)
     return ticker.upper() + ": $" + str(result.json())
