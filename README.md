@@ -17,7 +17,8 @@ Make sure your settings are like so:
 2. Add in the URL like so "http://<yourappurl>/stock
     * This assumes that you've deployed your application to AWS, heroku, digitalocean, or wherever you feel like so
     * Essentially, in slack when you type in "  /stock xyz  ", it will automatically call the above url as http://yourappurl/stock?text=xyz
-3. If you've configured it correctly then you should be good to go! I've added a setup screenshot below as well
+3. Set the Method type to GET
+4. If you've configured it correctly then you should be good to go! I've added a setup screenshot below as well
 
 ![Add a custom slash command configuration](https://github.com/savala/slackStocks/blob/master/screenshots/setup3.png)
 
