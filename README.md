@@ -1,17 +1,23 @@
-# Slack Stocks
-A slack slash command that gives you pricing information on a stock ticker
+# Slack Stocks w/ Zappa
+This repo uses [SlackStocks](https://github.com/savala/slackStocks) - a slack slash command that gives you pricing information on a stock ticker, 
+together with [Zappa](https://github.com/Miserlou/Zappa) - a wrapper for running WSGI in AWS Lambda.   
 
-![Showcase](https://github.com/savala/slackStocks/blob/master/screenshots/screenshot.png)
 
+# Usage
 
-# Setup
+1. `pip install -r requirements`
 
-In your team settings, add a Slash Command Configuration
+2. Create `zappa_settings.json` based on the attached template
+
+3. [Configure](https://blogs.aws.amazon.com/security/post/Tx3D6U6WSFGOK2H/A-New-and-Standardized-Way-to-Manage-Credentials-in-the-AWS-SDKs) your AWS credentials 
+
+4. Deploy with `zappa deploy dev`
+
+5. In your slack team settings, add a Slash Command Configuration
 ![Add a custom slash command configuration](https://github.com/savala/slackStocks/blob/master/screenshots/setup2.png)
 
 
 Make sure your settings are like so:
-
 
 1. Add the command name "/stock"
 2. Add in the URL like so "http://<yourappurl>/stock
@@ -21,6 +27,3 @@ Make sure your settings are like so:
 4. If you've configured it correctly then you should be good to go! I've added a setup screenshot below as well
 
 ![Add a custom slash command configuration](https://github.com/savala/slackStocks/blob/master/screenshots/setup3.png)
-
-
-If you have any questions, concerns, or anything feel free to reach out to me [@saiavala](https://twitter.com/saiavala)
