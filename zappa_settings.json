@@ -1,7 +1,0 @@
-{
-    "dev": { // The name of your environment
-       "aws_region": "eu-west-1",
-       "s3_bucket": "serverlesseuwest1pyconstocks", // The name of your S3 bucket
-       "app_function": "main.app" // The python path to your WSGI application function. In Flask, this is your 'app' object.
-    }
-}
