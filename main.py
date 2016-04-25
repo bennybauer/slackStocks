@@ -1,13 +1,13 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request
 import requests
 
 app = Flask(__name__)
 
 @app.route('/stock')
 def stock():
-    result_text = ""
     try:
         ticker = request.args.get('text')
+
         # Get price, amount change, percent change, day high, day low
         url = "http://download.finance.yahoo.com/d/quotes.csv?s=" + ticker + "&f=l1c1p2hg"
         result = requests.get(url).text.split(',')

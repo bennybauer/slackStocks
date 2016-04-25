@@ -1,2 +1,9 @@
 *.DS_Store
 *.swp
+*.zip
+
+# IntelliJ
+.idea
+
+# Zappa
+zappa_settings.json
