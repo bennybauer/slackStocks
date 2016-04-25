@@ -3,9 +3,9 @@ This repo uses [SlackStocks](https://github.com/savala/slackStocks) - a slack sl
 together with [Zappa](https://github.com/Miserlou/Zappa) - a wrapper for running WSGI in AWS Lambda.   
 
 
-# Usage
+## Usage
 
-1. `pip install -r requirements`
+1. `pip install -r requirements.txt`
 
 2. Create `zappa_settings.json` based on the attached template
 
